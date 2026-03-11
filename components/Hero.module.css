@@ -1,0 +1,84 @@
+/* components/Hero.module.css */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  padding-top: 80px;
+}
+
+.greeting {
+  color: var(--primary);
+  font-family: monospace;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.name {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: clamp(30px, 6vw, 65px);
+  font-weight: 900;
+  color: var(--text-muted);
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.description {
+  max-width: 540px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+
+.cta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 16px 36px;
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+}
+
+.btnGhost {
+  padding: 16px 36px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.btnGhost:hover {
+  color: var(--primary);
+}

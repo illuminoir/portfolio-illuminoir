@@ -1,0 +1,12 @@
+.footer {
+  padding: 32px 40px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-family: monospace;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.year { opacity: 0.5; }
