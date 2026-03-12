@@ -33,10 +33,11 @@ export default function About() {
           </div>
           <div className={styles.imageWrapper}>
             <div className={styles.imgBox}>
-              {/* Replace src with your actual photo */}
-              <div className={styles.placeholder}>
-                <span>Your Photo Here</span>
-              </div>
+              <img
+                  src="/photo.jpg"
+                  alt="My photo"
+                  className={styles.photo}
+              />
             </div>
           </div>
         </div>
