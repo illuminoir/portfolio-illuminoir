@@ -10,7 +10,7 @@ const projects = [
         <>
           Travel packing assistant that helps you organize luggage while staying within airline or train weight limits.
           <br /><br />
-          • Imports your packing spreadsheet and calculates total luggage weight<br />
+          • Imports your packing spreadsheet and calculates total weight<br />
           • Highlights overweight combinations across multiple bags<br />
           • Quickly experiment with different packing scenarios
         </>
