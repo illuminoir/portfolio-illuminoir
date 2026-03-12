@@ -14,14 +14,13 @@ export default function About() {
         <div className={styles.grid}>
           <div className={styles.text}>
             <p>
-              I'm a software developer with a deep passion for learning and experience with Java,
-              React, Node.js and all things application development. Working with the whole stack, including infrastructure,
-              is something I've greatly enjoyed. It drives my excitement and passion
-              for web development.
+              Software developer experienced in Java, React, and Node.js,
+              with a strong interest in building complete applications from frontend to infrastructure.
+              I enjoy working across the stack while designing systems, implementing features, and deploying them reliably.
+              Learning new technologies and understanding how systems work end-to-end is a big part of what drives my work.
             </p>
             <p>
-              When I'm not at my computer I like to spend my time playing arcade games, keeping fit,
-              and listening to birds.
+              Outside of programming, I enjoy arcade games, staying active, and listening to birds.
             </p>
             <p>Here are a few technologies I've been working with recently:</p>
             <ul className={styles.skills}>

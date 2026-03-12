@@ -4,11 +4,18 @@ import styles from './Projects.module.css';
 
 const projects = [
   {
-    title: 'Travel Helper App',
+    title: 'Travel Helper',
     image: '/projects/travelhelper.png',
-    description:
-      'Smart travel packing app built with React, TypeScript, and Express.js, hosted on AWS. Easily add items, track total luggage weight in real time, and pack confidently without exceeding limits.',
-    tech: ['React', 'TypeScript', 'Express', 'Docker', 'AWS'],
+    description: (
+        <>
+          Travel packing assistant that helps you organize luggage while staying within airline or train weight limits.
+          <br /><br />
+          • Imports your packing spreadsheet and calculates total luggage weight<br />
+          • Highlights overweight combinations across multiple bags<br />
+          • Quickly experiment with different packing scenarios
+        </>
+    ),
+    tech: ['React', 'TypeScript', 'Express.js', 'AWS'],
     github: 'https://github.com/illuminoir/travel-helper',
     live: 'TODO',
     featured: true,
@@ -16,40 +23,51 @@ const projects = [
   },
   {
     title: 'Bird Finder',
-    image: '/projects/travelhelper.png',
+    image: '/projects/birdfinder.png',
     description: (
         <>
-          Application designed to help me and my partner ground. With a microphone
-          connected to a Raspberry PI, it identifies birds near the microphone and notifies
-          you about their presence. Built using{' '}
-          <a href="https://birdnet.cornell.edu/" target="_blank" rel="noreferrer">BirdNET API</a>.
+          Bird detection system running on a Raspberry Pi that identifies nearby species using audio recordings.
+          <br /><br />
+          • Streams microphone input to classify bird calls in near real-time<br />
+          • Detects hundreds of species using the{' '}
+          <a href="https://birdnet.cornell.edu/" target="_blank" rel="noreferrer">
+            BirdNET API
+          </a><br />
+          • Designed for continuous outdoor monitoring on low-power hardware
         </>
     ),
-    tech: ['Python', 'Numpy', 'BirdNET API', 'python-telegram-bot'],
-    github: 'https://github.com/bscottnz/nextjs-chakra-chatapp',
-    live: 'https://nextjs-chakra-chatapp-qnhb6dq42-bscottnz.vercel.app/',
+    tech: ['Python', 'NumPy', 'BirdNET API', 'python-telegram-bot', 'Raspberry Pi'],
+    github: 'https://github.com/illuminoir/bird-finder-pi',
+    live: 'TODO',
     featured: true,
     align: 'right',
   },
   {
-    title: 'Telegram Bot Reminder',
+    title: 'Telegram Reminder Bot',
     image: '/projects/telegrambotreminder.png',
-    description:
-      'Telegram bot that allows you to set both one-time and daily reminders.',
+    description: (
+        <>
+          Telegram bot that allows users to schedule one-time or recurring reminders directly from chat.
+          <br /><br />
+          • Supports daily reminders and scheduled alerts<br />
+          • Simple command-based interface inside Telegram<br />
+          • Lightweight personal automation tool for task tracking
+        </>
+    ),
     tech: ['Python', 'python-telegram-bot'],
-    github: 'https://github.com/illuminoir/telegram-bot-reminder',
-    live: 'https://t.me/RemindAllanBot',
-    featured: true,
+    github: 'https://github.com/illuminoir/telegram-reminder-bot',
+    live: 'TODO',
+    featured: false,
     align: 'left',
   },
   {
-    title: '// TO-DO Productivity App',
+    title: '// TO-DO App',
     image: '/projects/travelhelper.png',
     description:
-      'Keep track of tasks with custom project folders and notes. Built with vanilla JavaScript with local storage persistence.',
+      'TODO',
     tech: ['JavaScript', 'HTML', 'CSS'],
-    github: 'https://github.com/bscottnz/todo',
-    live: 'https://bscottnz.github.io/todo/',
+    github: 'https://github.com/illuminoir/todo',
+    live: 'https://illuminoir.github.io/todo/',
     featured: true,
     align: 'right',
   },
@@ -95,7 +113,6 @@ export default function Projects() {
               </div>
 
               <div className={styles.content}>
-                <p className={styles.featured}>Featured Project</p>
                 <h3 className={styles.title}>{project.title}</h3>
                 <div className={styles.desc}>
                   <p>{project.description}</p>
