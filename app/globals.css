@@ -19,7 +19,12 @@
 }
 
 html {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 body {
@@ -56,7 +61,7 @@ img {
 
 /* Section shared styles */
 section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .container {
@@ -88,4 +93,10 @@ section {
   height: 1px;
   width: 200px;
   background: var(--bg-lighter);
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }

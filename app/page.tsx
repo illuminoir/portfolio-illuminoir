@@ -10,16 +10,18 @@ export const metadata = {
   description: 'Software developer specialising in Java, JavaScript, React, and Node.js.',
 };
 export default function Home() {
-  return (
-      <>
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer />
-      </>
-  );
+    return (
+        <>
+            <Navbar />
+            <main>
+                <Hero />
+                <About />
+                <section id="projects-contact">
+                    <Projects />
+                    <Contact />
+                    <Footer />
+                </section>
+            </main>
+        </>
+    );
 }
