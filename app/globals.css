@@ -20,7 +20,7 @@
 
 html {
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 section {
@@ -99,4 +99,18 @@ section {
   display: flex;
   align-items: center;
   min-height: 100vh;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+}
+
+#projects-contact {
+  scroll-snap-align: none;
+}
+
+#scroll-end {
+  scroll-snap-align: start;
+  height: 1px;
 }

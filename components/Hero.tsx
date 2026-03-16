@@ -14,7 +14,7 @@ export default function Hero() {
           creativity, logic, and technology that comes with building applicationns.
         </p>
         <div className={styles.cta}>
-          <a href="#projects" className={styles.btn}>
+          <a href="#projectsContact" className={styles.btn}>
             View my work →
           </a>
           <a href="#contact" className={styles.btnGhost}>

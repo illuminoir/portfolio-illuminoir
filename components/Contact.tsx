@@ -40,12 +40,8 @@ export default function Contact() {
   return (
       <section id="contact">
         <div className="container">
-          <h2 className="section-title">Get In Touch</h2>
 
           <div className={styles.wrapper}>
-            <p className={styles.intro}>
-              Have a question or want to work together? I&apos;d love to hear from you.
-            </p>
 
             <button className={styles.btn} onClick={() => setOpen(true)}>
               Get In Touch

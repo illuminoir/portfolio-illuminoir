@@ -1,9 +1,8 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Projects from '@/components/Projects';
-import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import ProjectsContact from "@/components/ProjectsContact";
 
 export const metadata = {
   title: 'Allan Khelifi | Software Developer',
@@ -16,11 +15,12 @@ export default function Home() {
             <main>
                 <Hero />
                 <About />
-                <section id="projects-contact">
-                    <Projects />
-                    <Contact />
+                <section id="projectsContact-contact">
+                    <ProjectsContact />
                     <Footer />
                 </section>
+
+                <div id="scroll-end" />
             </main>
         </>
     );
